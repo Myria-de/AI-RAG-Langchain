@@ -44,7 +44,10 @@ ollama rm [Modellname]
 ```
 entfernen Sie ein Modell, wenn Sie es nicht mehr benötigen.
 
-**4.** Erstellen Sie ein Arbeitsverzeichnis in Ihrem Home-Verzeichnis, beispielsweise „~/Scripts/summarize“, und kopieren Sie alle Dateien von https://m6u.de/KIRAG hinein. Wechseln Sie mit cd in dieses Verzeichnis und starten Sie 
+**4.** Erstellen Sie ein Arbeitsverzeichnis in Ihrem Home-Verzeichnis, beispielsweise „~/Scripts/summarize“, und kopieren Sie alle Dateien des Projekts  hinein.
+Download über „Code -> Download ZIP“.
+
+Wechseln Sie mit cd in dieses Verzeichnis und starten Sie 
 ```
 pip install -r requirements.txt
 ```
