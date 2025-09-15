@@ -85,6 +85,32 @@ python run_chatpdf-rag-deepseek.py
 Nach einem Klick auf „Browse files“ wählen Sie eine oder mehrere PDF-Dateien und stellen dann eine Frage.
 
 ## Hinweis
-Sie müssen die virtuelle Miniconda-Umgebung 
+Sie müssen die virtuelle Miniconda-Umgebung nicht zwingend zuerst starten, um ein Script darin auszuführen.
+Es ist nur wichtig, dass der Python-Interpreter aus dieser Umgebung verwendet wird.
+
+Erstellen Sie ein Bash-Script mit dem Namen „start_ollama_pdf_rag.sh“:
+```
+export PATH=$HOME/miniconda3/envs/summarize/bin:$PATH
+cd $HOME/src/summarize
+$HOME/miniconda3/envs/summarize/bin/python run_ollama_pdf_rag.py
+```
+Damit starten Sie beispielweise direkt run_ollama_pdf_rag.py.
+
+Einen Starter für das Menü, etwa mit dem Namen „Ollama-RAG.desktop“, können Sie ebenfalls erstellen:
+```
+[Desktop Entry]
+Type=Application
+Name=Ollama PDF RAG
+Comment=Start Ollama PDF RAG in miniconda env
+Exec=bash -c '[home]/start_ollama_pdf_rag.sh'
+Icon=text-x-python.png
+Terminal=false
+StartupNotify=true
+MimeType=text/x-python;
+```
+Den Platzhalter „[home]“ ersetzen Sie durch den Pfad zum Bash-Script (in .desktop-Startern werden Umgebungsvariablen wie "$HOME" nicht ausgewertet.
+
+Kopieren Sie die Datei in den Ordner „~/.local/share/applications“. Erstellen Sie den Ordner, wenn er nicht vorhanden ist.
+
 
 
