@@ -420,7 +420,14 @@ def main() -> None:
     
     # Clear vector DB if switching between sample and upload
     if use_sample != st.session_state.get("use_sample"):
-        delete_vector_db()            
+        if st.session_state["vector_db"] is not None:
+            st.session_state["vector_db"].delete_collection()
+            st.session_state["vector_db"]._client.reset()
+            st.session_state["vector_db"]._client.clear_system_cache()
+            st.session_state["vector_db"] = None
+            st.session_state["pdf_pages"] = None
+            st.session_state.user_prompt = ""
+            st.session_state["file_names"] = ""
         st.session_state["use_sample"] = use_sample
     
     if use_sample:
