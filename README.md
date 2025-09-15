@@ -108,7 +108,7 @@ Terminal=false
 StartupNotify=true
 MimeType=text/x-python;
 ```
-Den Platzhalter „[home]“ ersetzen Sie durch den Pfad zum Bash-Script (in .desktop-Startern werden Umgebungsvariablen wie "$HOME" nicht ausgewertet.
+Den Platzhalter „[home]“ ersetzen Sie durch den Pfad zum Bash-Script (in .desktop-Startern werden Umgebungsvariablen wie "$HOME" nicht ausgewertet).
 
 Kopieren Sie die Datei in den Ordner „~/.local/share/applications“. Erstellen Sie den Ordner, wenn er nicht vorhanden ist.
 
