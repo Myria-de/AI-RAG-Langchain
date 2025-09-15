@@ -1,0 +1,21 @@
+langchain>=0.2.15
+langchain-community>=0.2.14
+ruff>=0.6.2
+langchain-ollama>=0.1.3
+sentence-transformers>=3.0.1
+langchain-unstructured
+pypdf>=4.3.1
+numpy
+pyexcel
+pyexcel_ods
+openpyxl
+pandas
+einops
+# ollama_pdf_rag
+pdfplumber
+streamlit 
+chromadb
+# run_chatpdf-rag-deepseek.py
+streamlit_chat
+# langchain_openai
+
