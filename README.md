@@ -84,3 +84,7 @@ python run_chatpdf-rag-deepseek.py
 ```
 Nach einem Klick auf „Browse files“ wählen Sie eine oder mehrere PDF-Dateien und stellen dann eine Frage.
 
+## Hinweis
+Sie müssen die virtuelle Miniconda-Umgebung 
+
+
