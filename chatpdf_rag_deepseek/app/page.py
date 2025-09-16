@@ -1,5 +1,4 @@
 # based on https://github.com/paquino11/chatpdf-rag-deepseek-r1
-# Wie nutze ich KI in Firefox?
 import os
 import tempfile
 import json
@@ -10,7 +9,6 @@ import streamlit as st
 from streamlit_chat import message
 from rag import ChatPDF
 
-#st.set_page_config(page_title="RAG with Local DeepSeek R1")
 # Streamlit page configuration
 st.set_page_config(
     page_title="RAG with Local DeepSeek R1",
