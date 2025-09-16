@@ -112,5 +112,21 @@ Den Platzhalter „[home]“ ersetzen Sie durch den Pfad zum Bash-Script (in .de
 
 Kopieren Sie die Datei in den Ordner „~/.local/share/applications“. Erstellen Sie den Ordner, wenn er nicht vorhanden ist.
 
+## Quellen
+**summarize_texts.py:**
 
+https://github.com/debugverse/debugverse-youtube/tree/main/summarize_huge_documents_kmeans
 
+https://www.youtube.com/@DebugVerseTutorials
+
+https://www.youtube.com/watch?v=Gn64NNr3bqU
+
+**ollama_pdf_rag:**
+
+https://github.com/tonykipkemboi/ollama_pdf_rag
+
+https://www.youtube.com/watch?v=ztBJqzBU5kc
+
+**chatpdf_rag_deepseek:**
+
+https://github.com/paquino11/chatpdf-rag-deepseek-r1
