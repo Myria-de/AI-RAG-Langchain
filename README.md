@@ -86,8 +86,11 @@ python run_ollama_pdf_rag.py
 ```
 ## Dokument-Chat mit Deepseek
 
-Für unser Beispielscript „run_chatpdf-rag-deepseek.py“ müssen die Modelle „deepseek-r1:latest“ und „nomic-embed-text:latest“ für Ollama installiert sein. Die Konfiguration des Scripts ist in der Datei „chatpdf_rag_deepseek/app/rag.py“ enthalten.
-Starten Sie das Beispielscript in de virtuellen Umgebung mit
+Für unser Beispielscript „run_chatpdf-rag-deepseek.py“ müssen die Modelle „deepseek-r1:latest“ und „nomic-embed-text:latest“ für Ollama installiert sein.
+
+Die Konfiguration des Scripts ist in der Datei „chatpdf_rag_deepseek/app/rag.py“ enthalten.
+
+Starten Sie das Beispielscript in der virtuellen Umgebung mit
 ```
 python run_chatpdf-rag-deepseek.py
 ```
