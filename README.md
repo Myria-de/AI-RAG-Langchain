@@ -1,4 +1,9 @@
 # KI-Chat mit lokalen Dokumenten
+RAG (Retrieval-Augmented Generation) lässt sich auch auf dem eigenen PC mit selbst gehosteter KI in annehmbarer Qualität realisieren. 
+
+Das ist kostenlos und Ihre Daten landen nicht bei einem KI-Anbieter, der sie auch für andere Zwecke nutzen kann. Wir stellen Tools und Python-Scripte vor, mit denen Sie Dokumentsammlungen oder einzelne Dokumente untersuchen können.
+
+**Für alle selbst gehosteten KI-Modelle gilt:** Ein möglichst aktueller Nvidia-Grafikchip mit 6 GB oder mehr VRAM ist von Vorteil. Unter Linux muss der proprietäre Nvidia-Treiber installiert sein (Ubuntu: „Zusätzliche Treiber“, Linux Mint „Systemverwaltung -> Treiberverwaltung“. AMD-GPUs werden teilweise über die Vulkan-Schnittstelle unterstützt oder benötigen zusätzliche Bibliotheken und Treiber (siehe https://m6u.de/AMDROCM). Ist keine GPU vorhanden, muss die deutlich langsamere CPU die nötige Leistung liefern. Kleinere KI-Modelle benötigen weniger VRAM (Speicher der Grafikkarte) und CPU-Leistung, liefern aber meist schlechtere Ergebnisse. Bei einer guten Ausstattung des Rechners sind daher eher die größeren Modelle zu empfehlen. Das sollte man ausprobieren und sich die Unterschiede ansehen.
 
 ## Dokumentsammlungen mit GPT4All verarbeiten
 GPT4All (www.nomic.ai/gpt4all) bietet eine komfortable Oberfläche für die Nutzung mehrerer KI-Modelle. 
