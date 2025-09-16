@@ -65,7 +65,7 @@ entfernen Sie ein Modell, wenn Sie es nicht mehr benötigen.
 **4.** Erstellen Sie ein Arbeitsverzeichnis in Ihrem Home-Verzeichnis, beispielsweise „~/Scripts/summarize“, und kopieren Sie alle Dateien des Projekts  hinein.
 Download über „Code -> Download ZIP“.
 
-Wechseln Sie mit cd in dieses Verzeichnis und starten Sie 
+Wechseln Sie mit cd in dieses Verzeichnis (die virtuelle Python-Umgebung "summarize" muss aktiviert sein -> Punkt 2) und starten Sie 
 ```
 pip install -r requirements.txt
 ```
