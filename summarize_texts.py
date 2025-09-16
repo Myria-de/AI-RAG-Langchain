@@ -42,9 +42,10 @@ import pandas as pd
 import pyexcel as pe
 import torch
 import warnings
-### ChatGPT ####
-from langchain_openai.chat_models import ChatOpenAI
-from langchain_openai.embeddings import OpenAIEmbeddings
+### ChatGPT see requirements.txt if you want to use it ####
+### Needs openai api key. ###
+#from langchain_openai.chat_models import ChatOpenAI
+#from langchain_openai.embeddings import OpenAIEmbeddings
 
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -241,4 +242,3 @@ records = pe.get_records(file_name=csv_path)
 pe.save_as(records=records, dest_file_name=ods_path) # to ods
 excel_path = output_folder / "summaries.xlsx"
 df.to_excel(excel_path, index=False) # to xlsx
-
