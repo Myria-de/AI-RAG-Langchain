@@ -70,11 +70,6 @@ pip install -r requirements.txt
 ```
 Damit richten Sie alle erforderlichen Python-Module in der virtuellen Umgebung ein. 
 
-## KI-Chat mit grafischer Oberfläche
-Für einen Chat mit lokalen Dokumenten, also gezielte Fragen zum Inhalt, können Sie eine einfache Python-Oberfläche im Webbrowser verwenden. Unser Beispielscript „run_ollama_pdf_rag“ verwendet Streamlit (https://streamlit.io) für die Webanwendung. Der Start erfolgt in der virtuellen Python-Umgebung mit
-```
-python run_ollama_pdf_rag.py
-```
 ## Zusammenfassungen per Script automatisieren
 Auf Ihrer Festplatte liegen mehrere umfangreiche Dokumente und Sie wollen schnell die Kernaussagen ermitteln. Für diese Aufgabe können Sie unser Script „summarize_texts.py“ verwenden. Bereiten Sie eine virtuelle Python-Umgebung und Ollama vor, wie oben beschrieben.
 
@@ -84,6 +79,11 @@ python summarize_texts.py
 ```
 Das Ergebnis finden Sie anschließend im Ordner „~Scripts/summarize/output_rag“. Das Script erstellt Tabellen in den Formaten CSV, ODS und XLSX und eine Textdatei, jeweils mit dem gleichen Inhalt.
 
+## KI-Chat mit grafischer Oberfläche
+Für einen Chat mit lokalen Dokumenten, also gezielte Fragen zum Inhalt, können Sie eine einfache Python-Oberfläche im Webbrowser verwenden. Unser Beispielscript „run_ollama_pdf_rag“ verwendet Streamlit (https://streamlit.io) für die Webanwendung. Der Start erfolgt in der virtuellen Python-Umgebung mit
+```
+python run_ollama_pdf_rag.py
+```
 ## Dokument-Chat mit Deepseek
 
 Für unser Beispielscript „run_chatpdf-rag-deepseek.py“ müssen die Modelle „deepseek-r1:latest“ und „nomic-embed-text:latest“ für Ollama installiert sein. Die Konfiguration des Scripts ist in der Datei „chatpdf_rag_deepseek/app/rag.py“ enthalten.
