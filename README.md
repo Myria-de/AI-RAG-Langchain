@@ -84,6 +84,12 @@ python summarize_texts.py
 ```
 Das Ergebnis finden Sie anschließend im Ordner „~Scripts/summarize/output_rag“. Das Script erstellt Tabellen in den Formaten CSV, ODS und XLSX und eine Textdatei, jeweils mit dem gleichen Inhalt.
 
+**Wie das Script funktioniert:** Das Script verwendet Langchain (www.langchain.com), ein Framework für die Entwicklung von Anwendungen für Large-Language-Modelle (LLMs). Die zugehörigen Python-Bibliotheken enthalten Funktionen, die Text aus PDF-Dateien extrahieren, Chunks erstellen und Anfragen an das Ollama-LLM starten. 
+
+Im Konfigurationsabschnitt des Scripts ist festgelegt, welche Modelle zum Einsatz kommen. Tragen Sie andere Modelle ein, die Sie ausprobieren möchten. Laden Sie diese vorher mit „ollama pull [Modellname]“ herunter.
+
+Anweisungen an die KI sind weiter unten im Script in den Variablen „sys_template_str“ und „human_template_str“ hinterlegt. Ändern Sie den Text, wenn Sie andere Ergebnisse wünschen.
+
 ## KI-Chat mit grafischer Oberfläche
 Für einen Chat mit lokalen Dokumenten, also gezielte Fragen zum Inhalt, können Sie eine einfache Python-Oberfläche im Webbrowser verwenden. Unser Beispielscript „run_ollama_pdf_rag“ verwendet Streamlit (https://streamlit.io) für die Webanwendung. Der Start erfolgt in der virtuellen Python-Umgebung mit
 ```
