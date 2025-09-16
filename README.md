@@ -14,8 +14,7 @@ chmod +x ./gpt4all-installer-linux.run
 ```
 Folgen Sie den Anweisungen des Installationsassistenten. Nach Abschluss kopieren Sie den Programmstarter vom Ordner „Desktop“ nach „Schreibtisch“. Ubuntu-Nutzer gehen im Kontextmenü des Starters auf „Start erlauben“, damit er aktiv wird.
 
-## Zusammenfassungen per Script automatisieren
-### Vorbereitungen für die folgenden Scripts
+## Vorbereitungen für die folgenden Scripts
 Miniconda (www.anaconda.com) ist ein Tool, das eine unabhängige Python-Installation im eigenen Home-Verzeichnis bereitstellt.
 Python-Projekte organisiert man in virtuellen Umgebungen, die bei Bedarf unterschiedliche Python-Versionen nutzen können. 
 
@@ -76,6 +75,15 @@ Für einen Chat mit lokalen Dokumenten, also gezielte Fragen zum Inhalt, können
 ```
 python run_ollama_pdf_rag.py
 ```
+## Zusammenfassungen per Script automatisieren
+Auf Ihrer Festplatte liegen mehrere umfangreiche Dokumente und Sie wollen schnell die Kernaussagen ermitteln. Für diese Aufgabe können Sie unser Script „summarize_texts.py“ verwenden. Bereiten Sie eine virtuelle Python-Umgebung und Ollama vor, wie oben beschrieben.
+
+Das Script verarbeitet alle PDF- und TXT-Dateien aus dem Ordner „~/Scripts/summarize/input_files“ ohne Unterverzeichnisse. Als Beispiel ist der LinuxWelt-Artikel „KI-im-Alltag-LinuxWelt.pdf“ enthalten. Starten Sie das Script im Terminal bei aktivierter virtueller Python-Umgebung mit
+```
+python summarize_texts.py
+```
+Das Ergebnis finden Sie anschließend im Ordner „~Scripts/summarize/output_rag“. Das Script erstellt Tabellen in den Formaten CSV, ODS und XLSX und eine Textdatei, jeweils mit dem gleichen Inhalt.
+
 ## Dokument-Chat mit Deepseek
 
 Für unser Beispielscript „run_chatpdf-rag-deepseek.py“ müssen die Modelle „deepseek-r1:latest“ und „nomic-embed-text:latest“ für Ollama installiert sein. Die Konfiguration des Scripts ist in der Datei „chatpdf_rag_deepseek/app/rag.py“ enthalten.
