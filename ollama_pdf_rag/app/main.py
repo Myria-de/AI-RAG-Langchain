@@ -31,7 +31,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 from langchain_core.runnables import RunnablePassthrough
 from langchain.retrievers.multi_query import MultiQueryRetriever
-#from typing import List, Tuple, Dict, Any, Optional
 
 #### Settings ####
 # language of the pdf content
