@@ -19,7 +19,7 @@ Folgen Sie den Anweisungen des Installationsassistenten. Nach Abschluss kopieren
 Miniconda (www.anaconda.com) ist ein Tool, das eine unabhängige Python-Installation im eigenen Home-Verzeichnis bereitstellt.
 Python-Projekte organisiert man in virtuellen Umgebungen, die bei Bedarf unterschiedliche Python-Versionen nutzen können. 
 
-**1.** Installieren Sie Miniconda (https://www.anaconda.com) mit diesen sieben Zeilen:
+**1.** Installieren Sie Miniconda (https://www.anaconda.com) im Terminal mit diesen sieben Zeilen:
 ```
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
@@ -29,6 +29,7 @@ source ~/miniconda3/bin/activate
 conda init --all
 conda deactivate
 ```
+Schließen Sie das Terminal und öffnen Sie es erneut.
 
 **2.** Die virtuelle Umgebung für unsere Beispielscripte erstellen und aktivieren Sie mit
 ```
